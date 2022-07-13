@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+:root {
+  --background-primary: #d1d8e0;
+  --purple: #8854d0;
+  --white: #ffffff;
+  --btn-primary: #4b6584;
+  --btn-primary-hover: #2a486c;
+}
+
+body {
+  margin: 0;
+  background: var(--background-primary);
+  font-family: "Rubik", sans-serif;
+  min-height: 100vh;
+}

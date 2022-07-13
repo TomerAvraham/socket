@@ -1,0 +1,47 @@
+.side-nav {
+  grid-area: sideNav;
+  background: var(--purple);
+  color: var(--white);
+  padding-left: 20px;
+}
+
+.side-nav > h3 {
+  width: 95%;
+  border-bottom: 1px solid white;
+}
+
+.msg-container {
+  grid-area: main;
+  background: var(--white);
+}
+
+.msg-form {
+  grid-area: form;
+  background: var(--purple);
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.chat-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template:
+    "sideNav main main main"
+    "sideNav main main main"
+    "sideNav main main main"
+    "sideNav form form form";
+}
+
+@media only screen and (max-width: 700px) {
+  .chat-wrapper {
+    grid-template:
+      "sideNav main main main"
+      "main main main main"
+      "main main main main"
+      "form form form form";
+  }
+}
